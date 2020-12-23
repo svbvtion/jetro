@@ -1,0 +1,70 @@
+.hero
+	overflow: hidden
+
+	&__body
+		background-color: $bg-secondary
+		position: relative
+		+decor(100%)
+		position: relative
+		&_slidered
+			+decor(60px)
+			background-color: #fff
+	
+	&__slider
+		position: relative
+	&__slide
+		padding-bottom: 43%
+		+r(500)
+			padding: 30px
+			height: 300px
+	&__bg
+		+bg-box
+	&__pic
+		+bg-pic(top)
+
+	&__header
+		padding: 20px
+	&__title
+		color: $txt-fourth
+		font-size: 24px
+
+	&__descr
+		position: absolute
+		z-index: 1
+		max-width: 415px
+		left: 35px
+		bottom: 30px
+		background-color: rgba($bg-secondary, .8)
+		padding: 20px 25px
+		color: $txt-fourth
+		+r(500)
+			width: calc(100% - 40px)
+			left: 20px
+			bottom: 25px
+.descr
+	&__title
+		font-size: 18px
+		margin-bottom: 10px
+
+
+.heroThumbs
+	&__slider
+		background-color: #fff
+		margin-top: 15px
+	&__slide
+		height: 124px
+
+.arrow
+	height: 50px
+	fill: $bg-primary
+	position: absolute
+	top: 0
+	z-index: 1
+	cursor: pointer
+	+centerY
+	+r(450)
+		display: none
+	&__next
+		right: 0
+	&__prev
+		left: 0

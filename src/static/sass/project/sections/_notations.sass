@@ -1,0 +1,56 @@
+.notation
+	position: relative
+	margin-bottom: 45px
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 15px
+		background-color: $bg-third
+	&__content
+		padding-bottom: 40px
+		+flex(space-between)
+		margin-left: -20px
+		+r(500)
+			flex-direction: column-reverse
+	&__hero
+		padding-bottom: 32%
+		background-color: $bg-secondary
+		margin-bottom: 20px
+		position: relative
+		+r(500)
+			padding: 0
+			height: 250px
+	&__bg
+		+bg-box
+	&__pic
+		+bg-pic
+	&__title
+		font-size: 20px
+		color: $txt-primary
+		margin-bottom: 12px
+	&__info
+		min-width: 100px
+	
+
+	&__descr
+		flex: 1
+	&__item
+		margin-left: 20px
+
+
+.info
+	&__title
+		color: $txt-primary
+		font-size: 15px
+		margin-bottom: 5px
+		display: block
+	&__stat
+		color: $txt-third
+		font-family: $font-secondary
+		font-size: 12px
+	&__block
+		margin-bottom: 15px
+		

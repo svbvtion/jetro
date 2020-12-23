@@ -1,0 +1,37 @@
+include mixins/mixin
+include mixins/sections/sections
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="description" content="desrc")
+		title Document
+		link(rel='icon' href='./favicon.ico' type='image/x-icon')
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			+header
+		
+
+			main.content
+				+hero('blog')
+				.page
+					.wrapperPadding
+						.page__body
+							.page__content
+								.notations
+									.notation
+										.notation__hero
+										.notation__content
+											.notation__info
+											.notation__descr
+												h3.notation__title Top  WordPress  Themes  of  2020
+
+							+sidebar
+				
+
+			+footer
+
+		script(src="/static/js/menu.js")

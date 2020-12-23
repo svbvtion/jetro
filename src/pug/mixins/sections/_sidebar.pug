@@ -1,0 +1,54 @@
+mixin sidebar()
+	.sidebar
+		.sidebar__item
+			h4.sidebar__title.mini-title 
+				.mini-title__text about jetro
+				span.mini-title__decor
+			.sidebar__content
+				p.sidebar__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum. 
+		.sidebar__item
+			h4.sidebar__title.mini-title 
+				.mini-title__text categories
+				span.mini-title__decor
+			.sidebar__content
+				ul.sidebar__categories
+					li.sidebar__category
+						a.sidebar__category__link.sidebar__text(href="#") Video (3) 
+					li.sidebar__category
+						a.sidebar__category__link.sidebar__text(href="#") Sports (5)
+					li.sidebar__category
+						a.sidebar__category__link.sidebar__text(href="#") Media (2)
+					li.sidebar__category
+						a.sidebar__category__link.sidebar__text(href="#") Entertaiment (7)
+					li.sidebar__category
+						a.sidebar__category__link.sidebar__text(href="#") Life (4)
+		.sidebar__item
+			h4.sidebar__title.mini-title 
+				.mini-title__text photo gallery
+				span.mini-title__decor
+			.sidebar__content.sidebar__gallery
+				a.sidebar__gallery__item(href="#")
+					.sidebar__gallery__bg
+						+webp('sidebar__gallery__pic', 'img-1', 'png', 'sidebar gallery')
+
+				a.sidebar__gallery__item(href="#")
+					.sidebar__gallery__bg
+						+webp('sidebar__gallery__pic', 'img-2', 'png', 'sidebar gallery')
+				a.sidebar__gallery__item(href="#")
+					.sidebar__gallery__bg
+						+webp('sidebar__gallery__pic', 'img-3', 'png', 'sidebar gallery')
+				a.sidebar__gallery__item(href="#")
+					.sidebar__gallery__bg
+						+webp('sidebar__gallery__pic', 'img-4', 'png', 'sidebar gallery')
+				a.sidebar__gallery__item(href="#")
+					.sidebar__gallery__bg
+						+webp('sidebar__gallery__pic', 'bg', 'png', 'sidebar gallery')
+				a.sidebar__gallery__item(href="#")
+					.sidebar__gallery__bg
+						+webp('sidebar__gallery__pic', 'img-5', 'png', 'sidebar gallery')
+				a.sidebar__gallery__item(href="#")
+					.sidebar__gallery__bg
+						+webp('sidebar__gallery__pic', 'img-1', 'png', 'sidebar gallery')
+				a.sidebar__gallery__item(href="#")
+					.sidebar__gallery__bg
+						+webp('sidebar__gallery__pic', 'img-7', 'png', 'sidebar gallery')

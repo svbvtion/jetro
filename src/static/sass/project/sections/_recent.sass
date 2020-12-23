@@ -1,0 +1,45 @@
+.recent
+	padding-bottom: 45px
+	&__works
+		padding-top: 22px
+		display: grid
+		justify-content: space-between
+		grid-template-columns: repeat(auto-fit, minmax(20%, 1fr))
+		grid-gap: 18px
+		+phone
+			grid-template-columns: 1fr 1fr
+		+r(350)
+			grid-template-columns: 1fr
+
+.work
+
+
+	&:hover
+		.work
+			&__pic
+				transform: scale(1.1)
+
+	&__bg
+		height: 185px
+		position: relative
+		overflow: hidden
+		+smooth(.5)
+	
+	&__pic
+		+bg-pic
+		+smooth(.5)
+	&__descr
+		padding: 10px 15px
+		border: 1px solid $border
+		border-top: none
+	&__name
+		font-size: 16px
+		color: $txt-third
+		margin-bottom: 5px
+		display: block
+
+	&__date
+		font-size: 11px
+		color: $txt-primary
+
+		

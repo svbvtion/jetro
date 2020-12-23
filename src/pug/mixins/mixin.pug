@@ -5,7 +5,7 @@ mixin svg(name,mod)
 		svg(class="icon-" + name + ' ' + mod)
 			use(xlink:href="static/img/svg/sprite.svg#" + name)
 			
-mixin svgtrue(name,mod)
+mixin svgTrue(name,mod)
 		- mod = mod || ''
 		svg(class="icon-" + name + ' ' + mod)
 			use(xlink:href="static/img/svg/sprite-true.svg#" + name)
@@ -33,3 +33,12 @@ mixin webpResp(classname, path, type, name, width)
 			-index = index + 1
 		source(type="image/webp" srcset="static/img/"+path+"-"+imageSizes[lastBrekpoint]+".webp 1x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 2 +".webp 2x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 3+".webp 3x" media="(min-width: 0px)")
 		img(class=classname, srcset="static/img/"+path+"-"+imageSizes[lastBrekpoint]+"."+type+" 1x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 2+"."+type+" 2x, static/img/"+path+"-"+imageSizes[lastBrekpoint] * 3+"."+type+" 3x" src="static/img/"+path+"-"+imageSizes[lastBrekpoint]+"."+type loading="lazy" alt=name)
+
+- var links = ['./', './about.html', './notations.html', './portfolio.html', './contact.html']
+mixin menu(classname, items)
+	nav(class=classname)
+		ul(class=classname+'__list')
+			each item, index in items
+				li(class=classname+'__item')
+					a(class=classname+'__link' href=links[index])= item
+				

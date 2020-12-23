@@ -1,0 +1,122 @@
+body
+	font-family: $font-primary
+$wrapper: 945
+$wrapperPadding: 20
+
+*,
+*::before,
+*::after
+	margin: 0
+	padding: 0
+	border: 0
+	box-sizing: border-box
+a
+	text-decoration: none
+	color: inherit
+h1, h2, h3, h4, h5 h6
+	color: inherit
+img
+	vertical-align: top
+
+p
+	font-size: 12px
+	line-height: 1.5
+	margin-bottom: 15px
+	font-family: $font-secondary
+
+.wrapper
+	max-width: 945px
+	margin: 0 auto
+
+.wrapperPadding
+	@extend .wrapper
+	max-width: 985px
+	padding: 0 #{$wrapperPadding}px
+
+.logo
+	&__text
+		font-size: 36px
+		color: $txt-primary
+		&_decor
+			color: rgba($txt-primary, .5)
+.burger
+	+burger(30, 20, 2, $txt-primary)
+.menu
+
+	&__list
+		list-style: none
+		+flex
+	&__item
+		margin-left: 30px
+	&__link
+		font-size: 20px
+		color: $txt-third
+		+smooth
+		&:hover
+			color: $txt-primary
+.button
+	color: $button-txt
+	background-color: $button-bg
+	font-size: 15px
+	display: inline-block
+	+smooth
+	&:hover
+		background-color: lighten($button-bg, 10%)
+.container
+	+flex(space-between)
+	flex-direction: column
+	height: 100%
+
+.content
+	flex: 1
+
+
+
+.quote
+	margin-left: 80px
+	position: relative
+	display: block
+	font-style: italic
+	+r(400)
+		margin-left: 50px
+	&::before
+		$quoteWidth: 9
+		content: ''
+		position: absolute
+		top: 0
+		left: calc(-20px - #{$quoteWidth}px)
+		height: 100%
+		width: $quoteWidth+px
+		display: block
+		background-color: $bg-secondary
+
+
+.mini-title
+	color: $txt-primary
+	+flex(start, center)
+
+	&__text
+		font-size: 18px
+
+		margin-right: 20px
+	&__decor
+		flex: 1
+		background-color: $bg-third
+		height: 20px
+
+.hidden
+	+hidden
+
+=decor($height, $color:$bg-third)
+	&:before, &:after
+		content: ''
+		position: absolute
+		height: $height
+		top: 0
+		width: calc((100vw - #{$wrapper + 10 * 2}px) / 2)
+		background-color: $color
+		display: block
+	&:before
+		left: calc((100vw - 965px) / -2 - 10px)
+	&:after
+		right: calc((100vw - 965px) / -2 - 10px)

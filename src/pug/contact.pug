@@ -1,0 +1,66 @@
+include mixins/mixin
+include mixins/sections/sections
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="description" content="desrc")
+		title Document
+		link(rel='icon' href='./favicon.ico' type='image/x-icon')
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			+header
+		
+
+			main.content
+				+hero('contact us')
+
+				.page
+					.wrapperPadding
+						.page__body
+							.page__content
+								.contacts
+									.contacts__card
+										<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac34b1c12cb1c07b8afba933124aa703bbbc214cb73cb41c21aa9ad2b1917176a&amp;source=constructor" width='100%' frameborder="0"></iframe>
+									.contacts__box
+										.contacts__content
+											p.contacts__text.contacts__content__item Lorem ipsum dolor sit amet, in consectetur adipiscing elit. Siri Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum.
+											ul.contacts__list.contacts__content__item
+												li.contacts__item
+													span.contacts__icon t: 
+													a.contacts__link(href="#") (888) 842 - 8356
+												li.contacts__item
+													span.contacts__icon t: 
+													a.contacts__link(href="#") (888) 452 - 9257
+												li.contacts__item
+													span.contacts__icon e: 
+													a.contacts__link(href="mailto:info@psdfreebies.com") info@psdfreebies.com
+
+										.contacts__form
+											form.contForm
+												.contForm__body
+													.contForm__field
+														input.contForm__input#contFormName(type="text" placeholder="first name")
+														label.hidden(for="contFormName") first name
+													.contForm__field
+														input.contForm__input#contFormSurname(type="text" placeholder="last name")
+														label.hidden(for="contFormSurname") last name
+													.contForm__field
+														input.contForm__input#contFormEmail(type="text" placeholder="email adress ")
+														label.hidden(for="contFormEmail") email adress 
+													.contForm__field
+														textarea.contForm__textarea#contFormMessage(placeholder='message')
+														label.hidden(for="contFormMessage") message
+													.contForm__submit
+														a.button.contForm__button(href="#") submit 
+
+
+							+sidebar
+
+
+			+footer
+
+		script(src="/static/js/menu.js")

@@ -1,0 +1,22 @@
+.header
+	&__body
+		+flex(space-between, center)
+		padding: 20px 0
+	&__menu
+		+phone
+			+header-menu(76)
+			left: 100%
+			background-color: #fff
+			z-index: 100
+			&.active
+				left: 0
+			.menu
+				&__list
+					flex-direction: column
+				&__item
+					margin-left: 0
+					padding: 15px 0
+					border-bottom: 1px solid #000
+				&__link
+					display: block
+

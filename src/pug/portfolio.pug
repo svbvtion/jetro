@@ -1,0 +1,80 @@
+include mixins/mixin
+include mixins/sections/sections
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="description" content="desrc")
+		title Document
+		link(rel='icon' href='./favicon.ico' type='image/x-icon')
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			+header
+		
+
+			main.content
+				+hero('portfolio')
+				
+				.page
+					.portfolio
+						.wrapperPadding
+							.portfolio__body
+								.portfolio__tabs.tabs
+									nav.tabs__items
+										a.tabs__item(href="#") All
+										a.tabs__item(href="#") print
+										a.tabs__item(href="#") web
+										a.tabs__item(href="#") photoshop
+										a.tabs__item.active(href="#") Wordpress
+									.tabs__body.recent__works
+										a.recent__work.work(href="#")
+											.work__bg
+												+webp('work__pic', 'img-1', 'png', 'recent work icon')
+											.work__descr
+												span.work__name Character  Design
+												span.work__date June 15, 2012
+										a.recent__work.work(href="#")
+											.work__bg
+												+webp('work__pic', 'img-2', 'png', 'recent work icon')
+											.work__descr
+												span.work__name Character  Design
+												span.work__date June 15, 2012
+										a.recent__work.work(href="#")
+											.work__bg
+												+webp('work__pic', 'img-3', 'png', 'recent work icon')
+											.work__descr
+												span.work__name Character  Design
+												span.work__date June 15, 2012
+										a.recent__work.work(href="#")
+											.work__bg
+												+webp('work__pic', 'img-5', 'png', 'recent work icon')
+											.work__descr
+												span.work__name Character  Design
+												span.work__date June 15, 2012
+										a.recent__work.work(href="#")
+											.work__bg
+												+webp('work__pic', 'img-4', 'png', 'recent work icon')
+											.work__descr
+												span.work__name Character  Design
+												span.work__date June 15, 2012
+										a.recent__work.work(href="#")
+											.work__bg
+												+webp('work__pic', 'img-6', 'png', 'recent work icon')
+											.work__descr
+												span.work__name Character  Design
+												span.work__date June 15, 2012
+										a.recent__work.work(href="#")
+											.work__bg
+												+webp('work__pic', 'img-7', 'png', 'recent work icon')
+											.work__descr
+												span.work__name Character  Design
+												span.work__date June 15, 2012
+										
+
+
+			+footer
+
+		script(src="/static/js/menu.js")

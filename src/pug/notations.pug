@@ -1,0 +1,90 @@
+include mixins/mixin
+include mixins/sections/sections
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="description" content="desrc")
+		title Document
+		link(rel='icon' href='./favicon.ico' type='image/x-icon')
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			+header
+		
+
+			main.content
+				+hero('blog')
+				.page
+					.wrapperPadding
+						.page__body
+							.page__content
+								.notations
+									.notation
+										.notation__hero
+											.notation__bg
+												+webp('notation__pic', 'img-2', 'png', 'notation pic')
+										.notation__content
+											.notation__info.info.notation__item
+												.info__block
+													span.info__title Date
+													span.info__stat April 15, 2012
+												.info__block
+													span.info__title Tags 
+													span.info__stat Website | Design 
+												.info__block
+													span.info__title comments
+													span.info__stat 4 
+											.notation__descr.notation__item
+												h3.notation__title Top  WordPress  Themes  of  2020
+												p.notation__text.text Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.
+												p.notation__text.text Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  ...
+									.notation
+										.notation__hero
+											.notation__bg
+												+webp('notation__pic', 'img-3', 'png', 'notation pic')
+										.notation__content
+											.notation__info.notation__item
+												.info__block
+													span.info__title Date
+													span.info__stat April 15, 2012
+												.info__block
+													span.info__title Tags 
+													span.info__stat Website | Design 
+												.info__block
+													span.info__title comments
+													span.info__stat 4 
+											.notation__descr.notation__item
+												h3.notation__title Top  WordPress  Themes  of  2020
+												p.notation__text.text Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.
+												p.notation__text.text Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  ...
+									.notation
+										.notation__hero
+											.notation__bg
+												+webp('notation__pic', 'img-5', 'png', 'notation pic')
+										.notation__content
+											.notation__info.notation__item
+												.info__block
+													span.info__title Date
+													span.info__stat April 15, 2012
+												.info__block
+													span.info__title Tags 
+													span.info__stat Website | Design 
+												.info__block
+													span.info__title comments
+													span.info__stat 4 
+											.notation__descr.notation__item
+												h3.notation__title Top  WordPress  Themes  of  2020
+												p.notation__text.text Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.
+												p.notation__text.text Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  ...
+
+
+
+							+sidebar
+				
+
+			+footer
+
+		script(src="/static/js/menu.js")

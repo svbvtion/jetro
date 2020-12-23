@@ -1,0 +1,35 @@
+.footer
+	&__box
+		overflow: hidden
+	&__body
+		background-color: $bg-secondary
+		position: relative
+		+decor(100%)
+		padding: 50px 40px
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(25%, 1fr))
+		justify-content: space-between
+		grid-gap: 30px
+		+phone
+			grid-template-columns: 1fr
+			padding: 50px 20px
+
+	&__title
+		color: $txt-fourth
+		font-size: 20px
+		margin-bottom: 20px
+	&__text
+		color: $txt-fourth
+		font-family: $font-secondary
+		font-size: 12px
+		margin-bottom: 10px
+	&__link
+		@extend .footer__text
+		display: block
+	&__social
+		margin-top: 20px
+.social
+	+flex(start, center)
+	margin-left: -5px
+	&__item
+		margin-left: 5px

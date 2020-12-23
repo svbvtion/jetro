@@ -1,0 +1,29 @@
+.sidebar
+	&__item
+		margin-bottom: 30px
+	&__title
+		margin-bottom: 20px
+	&__text
+		font-family: $font-secondary
+		font-size: 12px
+		line-height: 1.3
+	&__categories
+		list-style: none
+	&__gallery
+		+grid
+		+gtc(repeat(4, 1fr))
+		grid-gap: 5px
+		+phone
+			display: flex
+			flex-wrap: wrap
+		&__item
+			background-color: $bg-secondary
+			height: 51px
+			position: relative
+			+phone
+				height: 70px
+				flex: 1 1 70px
+		&__bg
+			+bg-box
+		&__pic
+			+bg-pic

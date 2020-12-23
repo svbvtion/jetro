@@ -1,0 +1,21 @@
+.portfolio
+	&__body
+		padding-bottom: 45px
+
+.tabs
+	&__items
+		+flex(start, center)
+		flex-wrap: wrap
+		margin-bottom: 0px
+		+r(400)
+			flex-direction: column
+
+	&__item
+		font-size: 15px
+		padding: 8px 15px
+		color: $txt-third
+		+r(400)
+			width: 100%
+		&.active
+			background-color: $bg-secondary
+			color: $txt-fourth

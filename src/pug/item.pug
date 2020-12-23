@@ -1,0 +1,38 @@
+include mixins/mixin
+include mixins/sections/sections
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="description" content="desrc")
+		title Document
+		link(rel='icon' href='./favicon.ico' type='image/x-icon')
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			+header
+		
+
+			main.content
+				+hero('slider plugin')
+				.page
+					.item
+						.item__slider
+							.wrapper
+								.item__slider__body
+									.item__slide.slide
+										.slide__bg
+											+webp('hero__pic', 'img-5', 'png', 'background')
+						.item__content
+							.wrapperPadding
+								p.item__text Praesent in dictum est. Fusce scelerisque nibh in sem rhoncus semper. Sed nisi risus, adipiscing eu mollis luctus, elementum at lacus. Suspendisse porta, eros eu fermentum molestie, purus erat hendrerit tellus, sodales rhoncus justo sapien in lacus. Morbi tincidunt lorem vitae turpis molestie lacinia. Vivamus nec nulla turpis. Ut placerat lacus aliquet ipsum lobortis vitae varius felis ullamcorper. Maecenas pharetra imperdiet dolor eu pulvinar.
+								p.item__text Nullam justo quam, tristique sit amet facilisis non, commodo vel nunc. In quam libero, pulvinar et scelerisque vitae, molestie euismod justo. Donec tortor magna, vehicula in facilisis sit amet, ultricies nec massa. Curabitur at tincidunt sem. Mauris nulla justo, ornare in condimentum non, eleifend at nibh. Nullam mattis faucibus odio, sit amet aliquam urna lobortis sit amet. Aliquam mauris elit, consectetur vestibulum tincidunt vitae, sodales vel libero. Phasellus malesuada, metus vitae lobortis sodales, diam lacus lacinia metus, id sodales ante urna in urna. Duis elementum luctus mi, et euismod leo aliquet at. Proin justo est, elementum in posuere ac, pharetra non ipsum. Phasellus sit amet nisi quis lacus hendrerit elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi bibendum enim ut sapien pellentesque lacinia. Aliquam fringilla sem eget sem pulvinar egestas. Duis congue lorem id mi scelerisque gravida. Ut in lacus libero. 
+
+				
+					+recent
+
+			+footer
+
+		script(src="/static/js/menu.js")

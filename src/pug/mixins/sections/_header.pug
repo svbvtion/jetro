@@ -1,0 +1,11 @@
+mixin header()
+	header.header
+		.wrapperPadding
+			.header__body
+				.header__logo
+					a.logo(href="./")
+						span.logo__text Jet<span class="logo__text_decor">ro</span>
+				.burger
+					span.burger__decor
+				.header__menu
+					+menu('menu', ['home', 'about us', 'blog', 'portfolio', 'contact us'])

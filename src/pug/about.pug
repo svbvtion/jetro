@@ -1,0 +1,33 @@
+include mixins/mixin
+include mixins/sections/sections
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="description" content="desrc")
+		title Document
+		link(rel='icon' href='./favicon.ico' type='image/x-icon')
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			+header
+		
+
+			main.content
+				+hero('about us')
+
+				.page
+					.wrapperPadding
+						.page__body
+							.page__content
+								p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita magnam molestiae omnis dignissimos laudantium beatae officiis at doloribus praesentium corporis recusandae, consequuntur numquam. Voluptatum pariatur cupiditate reprehenderit doloribus quia deleniti similique, assumenda, corporis enim, ratione voluptate consectetur dicta vero adipisci esse repellat tempora minus aspernatur exercitationem maxime et atque aliquam cumque. Temporibus praesentium voluptatem nihil perferendis vero quod commodi hic quaerat, alias mollitia inventore maiores dolor modi sed iste, laborum molestiae? Labore aperiam molestias reprehenderit distinctio cupiditate explicabo cumque laboriosam blanditiis. Ducimus ab vitae ratione unde nisi minus corrupti maxime amet, quae magnam cupiditate perferendis natus culpa tempora itaque.
+								p.text.quote Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium recusandae, obcaecati dolorum ab doloremque, cumque nostrum. Reiciendis amet perspiciatis maxime ex veniam velit? Mollitia, eligendi, similique. Dolores sed unde dolorem cumque maiores dolor asperiores rem veritatis libero rerum et ea fugit temporibus quis tempore, tenetur facere delectus debitis iusto quidem?
+								p.text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia odit facere, cumque! Laboriosam maxime cum, eligendi animi repudiandae ullam quod, tenetur facere dicta harum recusandae veritatis expedita id, quibusdam quaerat? Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Iure assumenda fugiat repellendus sit, adipisci praesentium atque obcaecati quis doloremque facilis aliquam, quia, vero, nisi? Quod similique debitis, aliquid illo consequuntur.
+							+sidebar
+							
+
+			+footer
+
+		script(src="/static/js/menu.js")

@@ -1,0 +1,38 @@
+.features
+	padding: 40px 0 45px
+	&__body
+		display: grid
+		+flex(space-between, stretch)
+		flex-wrap: wrap
+		margin: -40px 0 0 -35px
+.feature
+	flex: 1 1 220px
+	margin: 40px 0 0 35px
+	display: flex
+	align-items: flex-start
+	flex-direction: column
+	&__header
+		+flex(start, center)
+		margin-bottom: 10px
+		color: $txt-primary
+
+	&__icon
+		min-width: 50px
+		min-height: 50px
+		max-width: 50px
+		max-height: 50px
+		margin-right: 22px
+		fill: $txt-primary
+	&__title
+		font-size: 21px
+		line-height: 1.1
+	&__content
+		margin-bottom: 20px
+		flex: 1
+	&__txt
+		font-family: $font-secondary
+		font-size: 12px
+		line-height: 1.5
+	&__button
+		line-height: 0
+		padding: 15px
